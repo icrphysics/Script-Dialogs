@@ -1,0 +1,18 @@
+<Window
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:sys="clr-namespace:System;assembly=mscorlib"
+  WindowStyle="ToolWindow" 
+  MinWidth="280" MinHeight="150" Width="280" Height="150" SizeToContent="WidthAndHeight"
+  WindowStartupLocation="Manual" Left="1000" Top="50">
+  <StackPanel>
+    <Label x:Name="lblPrompt" Content="" />
+    <ComboBox x:Name="choicesBox" Width="130" />
+    <Label Content=" " />
+    <StackPanel Name="btnPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Button Name="btCancel" Click="cancel_clicked" Content="Cancel" Width ="80" Height="20" HorizontalAlignment="Center"/>
+      <Label Content=" " />
+      <Button Name="btOK" Content="OK" Width ="80" Height="20" HorizontalAlignment="Center" Click="ok_clicked" IsDefault="True" />
+    </StackPanel>
+  </StackPanel>
+</Window>
